@@ -1,0 +1,23 @@
+.skill-list-box{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.skill{
+    padding: .3em 1em;
+    color: white;
+    border: solid 1px white;
+    border-radius: 30px;
+    transition: .8s ease;
+    cursor: default;
+}
+
+.skill:hover{
+    background-color: white;
+    color: var(--dark-clr);
+}
