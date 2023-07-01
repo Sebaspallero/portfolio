@@ -19,12 +19,19 @@
   --sm-text:  clamp(.6rem, 4vw + 1rem, .8rem);
 
   /* COLORS */
-  --accent-clr: yellowgreen;
+  --accent-clr: greenyellow;
   --dark-clr: black;
   --light-dark-clr:#181818;
   /* --light-dark-clr:#1f1e1e; */
   --white-clr: #fbfafb;
   --grey-clr: #a19494;
+
+  /* ANIMATION */
+  --size:clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap:calc(var(--size) / 28);
+  --duration:60s;
+  --scroll-start:0;
+  --scroll-end:calc(-100% - var(--gap));
   
 }
 

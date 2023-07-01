@@ -16,7 +16,7 @@ const Hero = () => {
                 <p className='hero-subtitle'>Frontend Developer</p>
             </div>
             <div className='hero-buttons-box'>
-                <button className='contact-button'>CONTACT ME</button>
+                <a href='#contact' className='contact-button'>CONTACT ME</a>
                 <a href={CV} className='cv-button' download="CV SEBASTIÁN PALLERO">DOWLOAD CV</a>
             </div>
         </div>

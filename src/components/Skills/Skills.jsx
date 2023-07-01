@@ -1,4 +1,5 @@
 import { skillList } from "./skills-list"
+import MarqueeLogo from "../MarqueeLog/MarqueeLogo"
 import './styles.css'
 
 const Skills = () => {
@@ -15,6 +16,7 @@ const Skills = () => {
                 )
             })}
         </div>
+        <MarqueeLogo/>
     </section>
   )
 }

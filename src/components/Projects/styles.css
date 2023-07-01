@@ -1,0 +1,9 @@
+.projects-section{
+    position: relative;
+    margin-top: 3em;
+}
+
+.anchor-projects{
+    position: absolute;
+    top: -7em;
+}
