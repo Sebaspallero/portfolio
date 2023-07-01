@@ -1,17 +1,31 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import './styles.css'
 
 const Footer = () => {
   return (
     <footer>
-        <p className='footer-title'>LETS'S CONNECT</p>
+        <span className='anchor-footer' id='contact'></span>
+        <p className='footer-title'>LET'S CONNECT</p>
         <div className='footer-contact-box'>
-            <a href='https://wa.me/541167805752' target="_blank" rel="noreferrer" className='footer-contact-link'>Whatsapp me</a>
-            <a href='mailto:sebastianoria@hotmail.com' className='footer-contact-link'>Mail me</a>
+            <p className='footer-contact-link'>+54 11 6780-5752</p>
+            <p className='footer-contact-link'>sebastianoria@hotmail.com</p>
         </div>
-        <div>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div className='footer-social-box'>
+            <div className='footer-social'>
+                <span className='social-divider'></span>
+                <div className='social-text-box'>
+                    <p className='social-text'>Linkedin</p>
+                    <FontAwesomeIcon className='social-text-icon' icon={faLinkedin}/>
+                </div> 
+            </div>
+            <div className='footer-social'>
+                <span className='social-divider'></span>
+                <div className='social-text-box'>
+                    <p className='social-text'>Github</p>
+                    <FontAwesomeIcon className='social-text-icon' icon={faGithub}/>
+                </div> 
+            </div>
         </div> 
         <span className='divider'></span>
         <div className='author-box'>

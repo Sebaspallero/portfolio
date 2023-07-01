@@ -3,7 +3,8 @@ import './styles.css'
 
 const Skills = () => {
   return (
-    <section>
+    <section className="skills-section">
+        <span id='skills' className='anchor-skills'></span>
         <div className='section-title-box'>
             <h2 className='section-title'>Skills</h2><span className='section-title-dot'></span>
         </div>

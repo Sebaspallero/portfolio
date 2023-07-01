@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import profilePic1 from '../../assets/profile-pic-1.png'
-import profilePic2 from '../../assets/profile-pic-2.png'
 import './styles.css'
 
 const About = () => {
   return (
     <section className='about-section'>
+        <span id='about' className='anchor-about'></span>
         <div className='section-title-box'>
             <h2 className='section-title'>About</h2><span className='section-title-dot'></span>
         </div>

@@ -1,8 +1,16 @@
 
 .hero-section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.anchor-hero{
+    position: absolute;
+    top: -10em;
 }
 
 .hero-subtitle{
@@ -107,4 +115,72 @@ marquee{
     background-color: aqua;
 }
 
+
+.hero-image-box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+
+/* .image-x{
+    animation-name: rotate-x;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate-x {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .image-square{
+    animation-name: rotate-square;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate-square {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-180);
+      }
+    100% {
+      transform: rotate(-360deg);
+    }
+  } */
+
+.image-x{
+    color: var(--accent-clr);
+    font-size: 5.5em;
+    position: absolute;
+    top: -10px;
+    left: 1.5em;
+    transform: rotate(80deg);
+
+}
+
+.image-circle{
+    color: var(--white-clr);
+    font-size: 3.5em;
+    position: absolute;
+    top: 3.5em;
+    left: 1em;
+}
+
+
+.image-square{
+    color: var(--accent-clr);
+    font-size: 4.5em;
+    position: absolute;
+    top: 2em;
+    left: 3.5em;
+    transform: rotate(-80deg);
+}
 

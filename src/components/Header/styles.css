@@ -34,7 +34,7 @@ nav{
     font-weight: bolder;
 }
 
-nav ul{
+.nav-links{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,13 +42,12 @@ nav ul{
     gap: 3em;
 }
 
-nav ul li{
+.nav-link{
     color: white;
-    cursor: pointer;
     position: relative;
 }
 
-nav ul li::after{
+.nav-link::after{
     background: none repeat scroll 0 0 transparent;
     bottom: -5px;
     content: "";
@@ -61,7 +60,7 @@ nav ul li::after{
     width: 0;
 }
 
-nav ul li:hover:after { 
+.nav-link:hover:after { 
     width: 100%; 
     left: 0; 
   }

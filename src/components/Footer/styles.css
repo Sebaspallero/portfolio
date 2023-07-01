@@ -8,16 +8,22 @@ footer{
     min-height: 400px;
     padding-bottom: 1em;
     color: black;
-    background-color: white;
+    background-color: var(--white-clr);
     border-top-right-radius: 5em;
     border-top-left-radius: 5em;
+    position: relative;
+}
+
+.anchor-footer{
+    position: absolute;
+    top: -6em;
 }
 
 .footer-title{
     text-align: center;
     font-weight: bold;
     font-size: 7em;
-    width: 8em;
+    width: 7em;
     line-height: 1em;
 }
 
@@ -27,15 +33,34 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 20%;
-
+    width: 30%;
+    cursor: pointer;
 }
 
 .footer-contact-link{
     color: var(--dark-clr);
     font-weight: bold;
     font-size: 1rem;
+    position: relative;
 }
+
+.footer-contact-link::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: greenyellow;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.footer-contact-link:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 
 
 .divider{
@@ -75,4 +100,53 @@ footer{
     height: 7px;
     border-radius: 50%;
     background-color: greenyellow;
+}
+
+.footer-social-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    cursor: pointer;
+}
+
+.social-divider{
+    width: 100%;
+    height: 2px;
+    background-color: var(--grey-clr);
+    transition: .5s ease;
+}
+
+.footer-social:hover .social-divider{
+    background-color: var(--accent-clr);
+}
+
+.social-text-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: .3em;
+}
+
+
+.social-text{
+    font-size: 1rem;
+    color: var(--dark-clr);
+    font-weight: 500;
+}
+
+.social-text-icon{
+    font-size: 1.3rem;
+    color: var(--dark-clr);
 }

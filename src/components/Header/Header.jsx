@@ -5,13 +5,13 @@ const Header = () => {
     <header>
         <nav>
             <div className='header-title-box'>
-                <p className='header-title'>Sebastián</p><span className='header-title-dot'></span>
+                <a href='#hero' className='header-title'>Sebastián</a><span className='header-title-dot'></span>
              </div>
              <ul className='nav-links'>
-                <li className='nav-link'>About</li>
-                <li className='nav-link'>Skills</li>
-                <li className='nav-link'>Projects</li>
-                <li className='nav-link'>Contact</li>
+                <li><a className='nav-link' href='#about'>About</a></li>
+                <li><a className='nav-link' href='#skills'>Skills</a></li>
+                <li><a className='nav-link' href='#proyects'>Projects</a></li>
+                <li><a className='nav-link' href='#contact'>Contact</a></li>
              </ul>
         </nav>
     </header>

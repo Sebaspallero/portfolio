@@ -1,19 +1,29 @@
 import './styles.css'
 import CV from '../../assets/CV-SEBASTIAN-PALLERO.pdf'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark, faCircle, faSquare} from '@fortawesome/free-solid-svg-icons'
 
 const Hero = () => {
   return (
-    <section>
+    <section className='hero-section'>
+        <span id='hero' className='anchor-hero'></span>
         <div>
-            <p className='hero-subtitle'>Hello there, I'm</p>
-            <div className='hero-title-box'>
-                <p className='hero-title'>Sebastián</p><span className='hero-title-dot hero-title'>Pallero</span>{/* <span className='hero-title-dot'></span> */}
+            <div>
+                <p className='hero-subtitle'>Hello there, I'm</p>
+                <div className='hero-title-box'>
+                    <p className='hero-title'>Sebastián</p><span className='hero-title-dot hero-title'>Pallero</span>{/* <span className='hero-title-dot'></span> */}
+                </div>
+                <p className='hero-subtitle'>Frontend Developer</p>
             </div>
-            <p className='hero-subtitle'>Frontend Developer</p>
+            <div className='hero-buttons-box'>
+                <button className='contact-button'>CONTACT ME</button>
+                <a href={CV} className='cv-button' download="CV SEBASTIÁN PALLERO">DOWLOAD CV</a>
+            </div>
         </div>
-        <div className='hero-buttons-box'>
-            <button className='contact-button'>CONTACT ME</button>
-            <a href={CV} className='cv-button' download="CV SEBASTIÁN PALLERO">DOWLOAD CV</a>
+        <div className='hero-image-box'>
+            <FontAwesomeIcon className='image-x' icon={faXmark}/>
+            <FontAwesomeIcon className='image-circle' icon={faCircle}/>
+            <FontAwesomeIcon className='image-square' icon={faSquare}/>
         </div>
         {/* <marquee direction="right" scrollamount="5" behavior="scroll">Probando Maquee</marquee> */}
     </section>

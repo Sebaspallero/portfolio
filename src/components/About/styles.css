@@ -1,8 +1,14 @@
 .about-section{
-    margin: 3em 0em;
+    padding: 3em 0em;
     display: flex;
     flex-direction: column;
     gap: 2.5em;
+    position: relative;
+}
+
+.anchor-about{
+    position: absolute;
+    top: -4em;
 }
 
 .section-title-box{

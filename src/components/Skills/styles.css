@@ -1,3 +1,12 @@
+.skills-section{
+    position: relative;
+}
+
+.anchor-skills{
+    position: absolute;
+    top: -6.5em;
+}
+
 .skill-list-box{
     width: 60%;
     display: flex;
