@@ -11,7 +11,7 @@ const Hero = () => {
             <div>
                 <p className='hero-subtitle'>Hello there, I'm</p>
                 <div className='hero-title-box'>
-                    <p className='hero-title'>Sebastián</p><span className='hero-title-dot hero-title'>Pallero</span>{/* <span className='hero-title-dot'></span> */}
+                    <p className='hero-title'>Sebastián</p><span className='hero-title'>Pallero<FontAwesomeIcon className='hero-title-dot' icon={faCircle}/></span>
                 </div>
                 <p className='hero-subtitle'>Frontend Developer</p>
             </div>
@@ -25,7 +25,6 @@ const Hero = () => {
             <FontAwesomeIcon className='image-circle' icon={faCircle}/>
             <FontAwesomeIcon className='image-square' icon={faSquare}/>
         </div>
-        {/* <marquee direction="right" scrollamount="5" behavior="scroll">Probando Maquee</marquee> */}
     </section>
   )
 }

@@ -17,7 +17,7 @@
     -webkit-text-stroke: 1px white;
     color: transparent;
     font-weight: bold;
-    font-size: 3em;
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
 }
 
 .hero-title-box{
@@ -30,28 +30,16 @@
 
 .hero-title{
     font-weight: bold;
-    font-size: 5em;
+    font-size: clamp(3rem, 5vw + 1rem, 5rem);
     color: white;
     position: relative;
 }
 
-.hero-title-dot::after{
-    content: '';
-    position: absolute;
-    bottom: 32px;
-    right: -20px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: greenyellow;
+.hero-title-dot{
+    margin-left: .3em;
+    font-size: clamp(.6rem, 5vw + 1rem, .8rem);
+    color: greenyellow;
 }
-
-/* .hero-title-dot{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: greenyellow;
-} */
 
 .hero-buttons-box{
     display: flex;
@@ -117,14 +105,16 @@ marquee{
 
 
 .hero-image-box{
-    position: relative;
+    position: absolute;
+    left: calc(100vw - 55%);
+    top: 2em;
     width: 300px;
     height: 300px;
 }
 
 .image-x{
     color: var(--accent-clr);
-    font-size: 5.5em;
+    font-size: clamp(3rem, 5vw + 1rem, 5.5rem);
     position: absolute;
     top: -10px;
     left: 1.5em;
@@ -134,7 +124,7 @@ marquee{
 
 .image-circle{
     color: var(--white-clr);
-    font-size: 3.5em;
+    font-size: clamp(2rem, 3vw + 1rem, 3.5rem);
     position: absolute;
     top: 3.5em;
     left: 1em;
@@ -143,10 +133,60 @@ marquee{
 
 .image-square{
     color: var(--accent-clr);
-    font-size: 4.5em;
+    font-size: clamp(2.5rem, 4vw + 1rem, 4.5rem);
     position: absolute;
     top: 2em;
     left: 3.5em;
     transform: rotate(-80deg);
 }
 
+@media(width <= 810px){
+    .hero-image-box{
+        width: 100px;
+    }
+}
+
+@media (width <= 762px){
+
+    .hero-buttons-box{
+        gap: 1em;
+    }
+    
+    .contact-button{
+        padding: .3em 1.5em;
+        font-size: .9rem;
+    }
+    
+    .cv-button{
+        font-size: 1rem;
+    }
+
+    .hero-section{
+        margin-bottom: 1em;
+    }
+}
+
+@media (width <= 475px){
+    .hero-image-box{
+        left: 14em;
+        width: 50px;
+    }
+
+    .image-square{
+       display: none;
+    }
+}
+
+@media (width <= 356px){
+    .contact-button{
+        padding: .3em .8em;
+    }
+    .hero-section{
+        margin-bottom: 0em;
+    }
+
+    .hero-image-box{
+       display: none;
+    }
+    
+}

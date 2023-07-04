@@ -3,8 +3,8 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 2em 0em;
-    width: 100%;
+    padding: 2em 1em;
+    /* width: 100%; */
     min-height: 450px;
     padding-bottom: 1em;
     color: black;
@@ -22,7 +22,7 @@ footer{
 .footer-title{
     text-align: center;
     font-weight: bold;
-    font-size: 7em;
+    font-size: clamp(3rem, 6vw + 1rem, 7rem);
     width: 5em;
     line-height: 1em;
 }
@@ -33,12 +33,12 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 35%;
+    gap: 5em;
     margin-top: 2em;
     cursor: pointer;
 }
 
-.footer-contact-link{
+.footer-phone-link{
     border: none;
     background-color: transparent;
     padding: 0em 0em;
@@ -49,11 +49,18 @@ footer{
     cursor: pointer;
 }
 
-.is-active{
+.footer-mail-link{
+    border: none;
+    background-color: transparent;
+    padding: 0em 0em;
+    color: var(--dark-clr);
+    font-weight: bold;
+    font-size: 1rem;
     position: relative;
+    cursor: pointer;
 }
 
-.is-active::before{
+.phone-active::before{
     content: 'Copied !';
     position: absolute;
     top: -3em;
@@ -62,11 +69,24 @@ footer{
     left: 27%;
     background-color: var(--dark-clr);
     color: var(--white-clr);
-    font-weight: 400;
+    font-weight: 500;
     font-size: .8rem;
 }
 
-.footer-contact-link::after{
+.mail-active::before{
+    content: 'Copied !';
+    position: absolute;
+    top: -3em;
+    padding: .3em .4em;
+    border-radius: 5px;
+    left: 27%;
+    background-color: var(--dark-clr);
+    color: var(--white-clr);
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.footer-phone-link::after{
     background: none repeat scroll 0 0 transparent;
     bottom: -5px;
     content: "";
@@ -79,25 +99,36 @@ footer{
     width: 0;
 }
 
-.footer-contact-link:hover:after { 
+.footer-phone-link:hover:after { 
     width: 100%; 
     left: 0; 
   }
 
-
-.divider{
-    width: 100%;
+  .footer-mail-link::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: -5px;
+    content: "";
+    display: block;
     height: 2px;
-    background-color: var(--grey-clr);
+    left: 50%;
+    position: absolute;
+    background: greenyellow;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
+
+.footer-mail-link:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 
 .author-box{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-between;
     width: 90%;
-    height: fit-content;
 }
 
 .author-text{
@@ -106,22 +137,16 @@ footer{
     font-size: .8rem;
 }
 
-.author-text span{
+.author-text-bold{
     color: var(--dark-clr);
     font-weight: bold;
-    position: relative;
     font-size: .9rem;
 }
 
-.author-text span::after{
-    content: '';
-    position: absolute;
-    bottom: 6px;
-    right: -10px;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: greenyellow;
+.footer-dot{
+    font-size: .3rem;
+    color: var(--accent-clr);
+    margin-left: .3em;
 }
 
 .footer-social-box{
@@ -129,15 +154,15 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
     margin-top: 3em;
+    gap: 10em;
 }
 
 .footer-social{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 30%;
+    width: 10em;
     cursor: pointer;
 }
 
@@ -172,4 +197,69 @@ footer{
 .social-text-icon{
     font-size: 1.3rem;
     color: var(--dark-clr);
+}
+
+@media(width <= 720px){
+    .footer-contact-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5em;
+        margin-top: 0em;
+        cursor: pointer;
+    }
+}
+
+@media(width <= 510px){
+    .footer-contact-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        margin-top: 0em;
+        cursor: pointer;
+    }
+
+    .footer-social-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0em;
+        gap: 2em;
+    }
+
+    .author-text{
+        color: var(--light-dark-clr);
+        font-weight: 500;
+        font-size: .6rem;
+    }
+    
+    .author-text-bold{
+        color: var(--dark-clr);
+        font-weight: bold;
+        position: relative;
+        font-size: .7rem;
+    }
+    
+    .author-box{
+        width: 100%;
+    }
+}
+
+@media(width <= 350px){
+    .footer-social-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0em;
+        gap: 2em;
+    }
+
+   
 }

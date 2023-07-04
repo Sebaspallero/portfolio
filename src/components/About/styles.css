@@ -71,3 +71,14 @@
     line-height: 2rem;
     word-spacing: .1em;
 }
+
+@media(width <= 1030px){
+    .profile-info-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3em;
+        font-size: .9rem;
+    }
+}

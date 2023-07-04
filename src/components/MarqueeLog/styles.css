@@ -15,11 +15,6 @@
     animation: scroll-x var(--duration) linear infinite;
   }
 
-  .marquee-reverse .marquee_group{
-    animation-direction: reverse;
-    animation-delay: -3s;
-  }
-
   @keyframes scroll-x{
     from{transform: translateX(var(--scroll-start));}
     to{transform: translateX(var(--scroll-end));}
@@ -68,4 +63,31 @@
     right:0;
     top:0;
     transform:rotateZ(180deg);
+  }
+
+  @media(width <= 500px){
+    .marquee_group{
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 80em;
+      animation: scroll-x var(--duration) linear infinite;
+    }
+
+    .img-marquee{
+      height: 60px;
+      width: 60px;
+      padding: 0em 5em 0em 5em;
+    }
+
+    .img-marquee-t{
+      padding: 0em 0em 0em 10em;
+    }
+
+    .fa{
+      font-size: 4em;
+      color: var(--white-clr);
+      padding: 0em 2em 0em 2em;
+    }
   }

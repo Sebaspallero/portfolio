@@ -1,3 +1,4 @@
+import HamburgerMenu from './HamburgerMenu/HamburgerMenu'
 import './styles.css'
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
                 <li><a className='nav-link' href='#projects'>Projects</a></li>
                 <li><a className='nav-link' href='#contact'>Contact</a></li>
              </ul>
+             <HamburgerMenu/>
         </nav>
     </header>
   )

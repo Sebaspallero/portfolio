@@ -7,3 +7,162 @@
     position: absolute;
     top: -7em;
 }
+
+.projects-grid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 3em;
+}
+
+.project-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.project-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em;
+    width: 100%;
+}
+
+.project-img{
+    padding: .3em;
+    border-radius: 15px;
+    background-color: white;
+    max-width: 300px;
+    width: 80%;
+    min-width: 200px;
+    height: auto;
+}
+
+.future-project-title{
+    color: white;
+    margin-top: 1em;
+}
+
+.future-project-img{
+    padding: .3em .3em 6em .3em;
+    border-radius: 15px;
+    background-color: white;
+    max-width: 300px;
+    width: 80%;
+    min-width: 200px;
+    height: auto;
+}
+
+.project-info-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 350px;
+}
+
+.project-title{
+    color: white;
+}
+
+.project-description{
+    color: white;
+}
+
+.stack-list-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.stack{
+    padding: .3em 1em;
+    color: white;
+    border: solid 1px white;
+    border-radius: 30px;
+    transition: .8s ease;
+    cursor: default;
+}
+
+.stack:hover{
+    background-color: white;
+    color: var(--dark-clr);
+}
+
+.repo-link{
+    color: white;
+    font-size: 1.4rem;
+    position: relative;
+    font-style: italic;
+}
+
+.repo-link::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: greenyellow;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.repo-link:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.project-link-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+}
+
+@media(width <= 1040px){
+    .project-link-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: inherit;
+    }
+
+    .project-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2em;
+        width: 100%;
+    }
+}
+
+@media(width <= 736px){
+    .project-link-grid{
+        gap: 2em;
+    }
+
+    .project-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-info-box{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+    }
+}
