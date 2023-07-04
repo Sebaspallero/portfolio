@@ -65,7 +65,7 @@
     transform:rotateZ(180deg);
   }
 
-  @media(width <= 500px){
+  @media(max-width: 500px){
     .marquee_group{
       flex-shrink: 0;
       display: flex;

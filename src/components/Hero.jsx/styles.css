@@ -140,13 +140,13 @@ marquee{
     transform: rotate(-80deg);
 }
 
-@media(width <= 810px){
+@media(max-width: 810px){
     .hero-image-box{
         width: 100px;
     }
 }
 
-@media (width <= 762px){
+@media (max-width: 762px){
 
     .hero-buttons-box{
         gap: 1em;
@@ -166,10 +166,11 @@ marquee{
     }
 }
 
-@media (width <= 475px){
+@media (max-width: 475px){
     .hero-image-box{
         left: 14em;
         width: 50px;
+        /* display: none; */
     }
 
     .image-square{
@@ -177,7 +178,7 @@ marquee{
     }
 }
 
-@media (width <= 356px){
+@media (max-width: 356px){
     .contact-button{
         padding: .3em .8em;
     }

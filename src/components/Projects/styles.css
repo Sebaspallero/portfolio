@@ -129,7 +129,7 @@
     width: inherit;
 }
 
-@media(width <= 1040px){
+@media(max-width: 1040px){
     .project-link-grid{
         display: flex;
         flex-direction: column;
@@ -149,7 +149,7 @@
     }
 }
 
-@media(width <= 736px){
+@media(max-width: 736px){
     .project-link-grid{
         gap: 2em;
     }

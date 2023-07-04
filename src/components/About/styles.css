@@ -72,7 +72,7 @@
     word-spacing: .1em;
 }
 
-@media(width <= 1030px){
+@media(max-width: 1030px){
     .profile-info-box{
         display: flex;
         flex-direction: column;

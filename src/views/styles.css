@@ -7,7 +7,7 @@ main{
     gap: 2em;
 }
 
-@media( width <= 500px){
+@media( max-width: 500px){
     main{
         padding-bottom: 5em;
     }

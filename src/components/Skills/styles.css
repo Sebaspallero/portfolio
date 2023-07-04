@@ -31,7 +31,7 @@
     color: var(--dark-clr);
 }
 
-@media(width <= 920px){
+@media(max-width: 920px){
     .skill-list-box{
         width: 100%;
         display: flex;

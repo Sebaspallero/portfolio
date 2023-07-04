@@ -19,7 +19,7 @@
   --sm-text:  clamp(.6rem, 4vw + 1rem, .8rem);
 
   /* COLORS */
-  --accent-clr: greenyellow;
+  --accent-clr: rgb(173, 255, 47);
   --dark-clr: black;
   --light-dark-clr:#181818;
   /* --light-dark-clr:#1f1e1e; */

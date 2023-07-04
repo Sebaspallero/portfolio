@@ -41,10 +41,8 @@
     margin-left: .3rem;
 }
 
-@media (width > 765px){
+@media (min-width: 765px){
     .menu-section{
        display: none;
     }
-    
-    
   }

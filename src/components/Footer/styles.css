@@ -199,7 +199,7 @@ footer{
     color: var(--dark-clr);
 }
 
-@media(width <= 720px){
+@media(max-width: 720px){
     .footer-contact-box{
         display: flex;
         flex-direction: row;
@@ -212,7 +212,7 @@ footer{
     }
 }
 
-@media(width <= 510px){
+@media(max-width: 510px){
     .footer-contact-box{
         display: flex;
         flex-direction: column;
@@ -251,7 +251,7 @@ footer{
     }
 }
 
-@media(width <= 350px){
+@media(max-width: 350px){
     .footer-social-box{
         display: flex;
         flex-direction: column;
