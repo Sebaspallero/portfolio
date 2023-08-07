@@ -21,54 +21,62 @@ export const skillList = [
     },
     {
         id:6,
-        name: 'JavaScript'
+        name: 'shadcn'
     },
     {
         id:7,
-        name: 'TypeScript'
+        name: 'JavaScript'
     },
     {
         id:8,
-        name: 'ReactJs'
+        name: 'TypeScript'
     },
     {
         id:9,
-        name: 'React Native'
+        name: 'ReactJs'
     },
     {
         id:10,
-        name: 'Next js'
+        name: 'React Native'
     },
     {
         id:11,
-        name: 'Angular'
+        name: 'Next js'
     },
     {
         id:12,
-        name: 'Redux Toolkit'
+        name: 'Angular'
     },
     {
         id:13,
-        name: 'React Query'
+        name: 'Redux Toolkit'
     },
     {
         id:14,
-        name: 'Zustand'
+        name: 'React Query'
     },
     {
         id:15,
-        name: 'Firebase'
+        name: 'Zustand'
     },
     {
         id:16,
-        name: 'SQL'
+        name: 'Firebase'
     },
     {
         id:17,
-        name: 'Node js'
+        name: 'SQL'
     },
     {
         id:18,
+        name: 'Prisma'
+    },
+    {
+        id:19,
+        name: 'Node js'
+    },
+    {
+        id:20,
         name: 'Testing'
     },
 ]

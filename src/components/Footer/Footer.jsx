@@ -30,7 +30,7 @@ const Footer = () => {
         <p className='footer-title'>LET'S CONNECT</p>
         <div className='footer-contact-box'>
             <button className={phone ? 'footer-phone-link phone-active' : 'footer-phone-link'} onClick={()=> copyPhone('+54 11 6780-5752')}>+54 11 6780-5752</button>
-            <button className={mail ? 'footer-mail-link mail-active' : 'footer-mail-link'} onClick={()=> copyMail('sebastianoria@hotmail.com')}>sebastianoria@hotmail.com</button>
+            <button className={mail ? 'footer-mail-link mail-active' : 'footer-mail-link'} onClick={()=> copyMail('sebastianpallerodev@gmail.com')}>sebastianpallerodev@gmail.com</button>
         </div>
         <div className='footer-social-box'>
             <a href='https://www.linkedin.com/in/sebastian-pallero-or%C3%ADa-a911591a1/' target="_blank" rel="noreferrer" className='footer-social'>

@@ -1,5 +1,5 @@
 import './styles.css'
-import CV from '../../assets/CV-SEBASTIAN-PALLERO.pdf'
+import CV from '../../assets/CV-SEBASTIAN-PALLERO-ENGLISH.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faCircle, faSquare} from '@fortawesome/free-solid-svg-icons'
 
@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
             <div className='hero-buttons-box'>
                 <a href='#contact' className='contact-button'>CONTACT ME</a>
-                <a href={CV} className='cv-button' download="CV SEBASTIÁN PALLERO">DOWLOAD CV</a>
+                <a href={CV} className='cv-button' download="CV SEBASTIÁN PALLERO ENGLISH">DOWLOAD CV</a>
             </div>
         </div>
         <div className='hero-image-box'>

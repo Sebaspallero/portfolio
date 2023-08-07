@@ -3,6 +3,7 @@ import portfolio from '../../assets/full-portfolio.png'
 import patitas from '../../assets/patitas-layout.png'
 import viajanding from '../../assets/viajanding.png'
 import liceum from '../../assets/liceum.png'
+import retibo from '../../assets/retibo.png'
 
 import './styles.css'
 
@@ -49,7 +50,29 @@ const Projects = () => {
                       <p className='stack'>Routing</p>
                     </div>
                   </div>
+                  <a href='https://patitas-petshop-and-food.netlify.app/' target="_blank" rel="noreferrer" className='repo-link'>View Site</a>
                   <a href='https://github.com/Sebaspallero/React-Vite-Patitas.git' target="_blank" rel="noreferrer" className='repo-link'>View Code</a>
+                </div>
+            </div>
+          </div>
+
+          <div className='project-grid'>
+            <div className='project-box'>
+                <img className='project-img' src={retibo} alt='Image with multiple screenshots of a website, the main color is blue and white'/>
+                <div className='project-link-grid'>
+                  <div className='project-info-box'>
+                    <h2 className='project-title'>Fullstack SaaS</h2>
+                    <p className='project-description'>A software as a service web app, made with Next.js, the OpenAI API, Prisma(SQL) and PlanetScale for the backend, auth, customer service and Tailwind.</p>
+                    <div className='stack-list-box'>
+                      <p className='stack'>Next.js</p>
+                      <p className='stack'>Tailwind</p>
+                      <p className='stack'>Prisma</p>
+                      <p className='stack'>SQL</p>
+                      <p className='stack'>Clerk</p>
+                    </div>
+                  </div>
+                  <a href='https://retibo.com.ar/' target="_blank" rel="noreferrer" className='repo-link'>View Site</a>
+                  <a href='https://github.com/Sebaspallero/Ai-Saas' target="_blank" rel="noreferrer" className='repo-link'>View Code</a>
                 </div>
             </div>
           </div>

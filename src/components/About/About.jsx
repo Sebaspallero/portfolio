@@ -18,8 +18,8 @@ const About = () => {
             </div> 
         </div>
         <div className='profile-info-box'>
-            <p className='profile-info-p'>Hey! I'm Sebastián Pallero, a frontend dev specialized in React.js, based in Buenos Aires - Argentina. Currently I'm looking for my first working experience, where I can add my knowledge in web development to work with a team and create great products for users!</p>
-            <p className='profile-info-p'>My current stack is centered in the React ecosystem - React.js, React Native and Next.js - but I can also work with other frontend frameworks such as Angular; In addition I have some basic knowledge in backend and data bases such as Firebase or SQL. When it comes to design I'm proficient in vanilla CSS, SCSS or Tailwind.</p>
+            <p className='profile-info-p'>Hey! I'm Sebastián Pallero, a frontend dev specialized in React.js, based in Buenos Aires - Argentina. Currently I'm looking for a challenging working experience, where I can add my knowledge in web development to work with a team and create great products for users!</p>
+            <p className='profile-info-p'>My current stack is centered in the React ecosystem - React.js, React Native and Next.js - but I can also work with other frontend frameworks such as Angular; In addition I have some basic knowledge in backend and data bases such as Firebase, SQL or Prisma. When it comes to design I'm proficient in vanilla CSS, SCSS, Tailwind and many UI libraries.</p>
         </div>
     </section>
   )
