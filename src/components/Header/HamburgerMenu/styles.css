@@ -1,0 +1,48 @@
+.menu-section{
+    position: relative;
+}
+
+.menu-icon{
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-box{
+    position: absolute;
+    background-color: var(--light-dark-clr);
+    border: 1px solid var(--white-clr);
+    right: 0em;
+    top: 4em;
+    padding: 2em 2em;
+    border-radius: 15px;
+}
+
+.nav-links-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0em;
+    gap: 1.5em;
+    width: 6em;
+}
+
+
+.nav-link-ham{
+    color: var(--white-clr);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav-link-dot{
+    color: var(--accent-clr);
+    font-size: .3rem;
+    margin-left: .3rem;
+}
+
+@media (min-width: 765px){
+    .menu-section{
+       display: none;
+    }
+  }

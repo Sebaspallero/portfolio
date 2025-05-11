@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0px;
+  scrollbar-color: var(--light-dark-clr) rgba(255, 0, 0, 0);
+  scrollbar-width: thin; 
+}
+
+:root{
+  /* FONTS */
+  --title: clamp(2rem, 5vw + 1rem, 2.5rem);
+  --subtitle: clamp(1.3rem, 3vw + 1rem, 1.8rem);
+  --text: clamp(.9rem, 4vw + 1rem, 1rem);
+  --sm-text:  clamp(.6rem, 4vw + 1rem, .8rem);
+
+  /* COLORS */
+  --accent-clr: rgb(173, 255, 47);
+  --dark-clr: black;
+  --light-dark-clr:#181818;
+  /* --light-dark-clr:#1f1e1e; */
+  --white-clr: #fbfafb;
+  --grey-clr: #a19494;
+
+  /* ANIMATION */
+  --size:clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap:calc(var(--size) / 28);
+  --duration:60s;
+  --scroll-start:0;
+  --scroll-end:calc(-100% - var(--gap));
+  
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-dark-clr);
+  border-radius: 10px;
+}
+
+body {
+  background-color: black;
+}
+
+.title{
+  font-size: var(--title);
+}
+.subtitle{
+  font-size: var(--subtitle);
+}
+.text{
+  font-size: var(--text);
+}
+.sm-text{
+  font-size: var(--sm-text);
+}

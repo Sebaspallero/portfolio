@@ -1,0 +1,21 @@
+main{
+    height: 100%;
+    padding: 10em 0em;
+    margin: 0em calc(8vw + 1em);
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.divider-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7em;
+}
+
+@media( max-width: 500px){
+    main{
+        padding-bottom: 5em;
+    }
+}
