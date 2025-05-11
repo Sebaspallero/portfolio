@@ -1,6 +1,10 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { ArrowUpRight, Code, ExternalLink, ChevronRight } from "lucide-react"
+import portfolio from '../../assets/projects-screenshots/97shots_so.png';
+import petshop from '../../assets/projects-screenshots/342shots_so.png';
+import inventory from '../../assets/projects-screenshots/429shots_so.png';
+import clinic from '../../assets/projects-screenshots/695shots_so.png';
 import "./projects-section.css"
 
 export default function ProjectsSection() {
@@ -12,7 +16,7 @@ export default function ProjectsSection() {
       title: "Portfolio",
       description:
         "A portfolio made with React.js and Vite, showcasing my latest projects, skills, goals and contact information.",
-      image: "src/assets/projects-screenshots/97shots_so.png",
+      image: portfolio,
       tags: ["React.js", "Vite", "JS", "CSS", "Framer Motion"],
       links: [
           { label: "View Site", icon: <ExternalLink className="icon-small" />, url: "https://sebastianpallero.netlify.app/" },
@@ -24,7 +28,7 @@ export default function ProjectsSection() {
       title: "Petshop e-commerce",
       description:
         "An e-commerce web site with a functional shopping-cart made with redux toolkit and firestore for the products and shopping orders.",
-      image: "src/assets/projects-screenshots/342shots_so.png",
+      image: petshop,
       tags: ["React.js", "Vite", "Firebase", "Redux Toolkit", "Payment Gateway"],
       links: [
         { label: "View Site", icon: <ExternalLink className="icon-small" />, url: "https://patitas-petshop-and-food.netlify.app/" },
@@ -36,7 +40,7 @@ export default function ProjectsSection() {
       title: "Inventory Management System",
       description:
         "A fullstack inventory management system made with SpringBoot and React.js, with JWT authentication, event listeners, useQuery, axios, MySql, and more.",
-      image: "/src/assets/projects-screenshots/429shots_so.png",
+      image: inventory,
       tags: ["React.js", "API Integration", "Tailwind CSS", "Spring Boot", "MySQL"],
       links: [
         { label: "View Frontend Code", icon: <Code className="icon-small" />, url: "https://github.com/Sebaspallero/inventory-management-front" },
@@ -48,7 +52,7 @@ export default function ProjectsSection() {
       title: "Clinic Booking System - In Progress",
       description:
         "A fullstack medical appointment booking system made with SpringBoot and Next.js, with JWT authentication, OAuth2, SpringMail, event listeners, useQuery, axios, MySql, and more.",
-      image: "src/assets/projects-screenshots/695shots_so.png",
+      image: clinic,
       tags: ["Next.js", "SpringBoot", "OAuth 2", "Spring Mail", "MySQL", "Swagger"],
       links: [
         { label: "View Frontend Code", icon: <Code className="icon-small" />, url: "https://github.com/Sebaspallero/multi-clinic-booking-system-front" },
